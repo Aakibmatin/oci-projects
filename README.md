@@ -1,9 +1,6 @@
 # oci-projects
 # OCI IAM Hands-On: Compartments, Domains, Users, Groups & Policies
 
-![OCI Logo]([https://oracleimg.com/ocom/groups/public/@oracle/documents/webcontent/1311490.png)  ](https://www.oracle.com/a/ocom/img/rc24full-distributed-cloud.png)
-*(Optional: add a nice banner or architecture diagram)*
-
 ## Overview
 Learning project demonstrating **Oracle Cloud Infrastructure Identity and Access Management (IAM)** basics.
 
