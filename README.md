@@ -23,4 +23,4 @@ Goal: Practice **least-privilege access**, secure multi-user setup, and compartm
 3. **User Creation** → Added new user to the domain  
 4. **Group & Membership** → Created group, assigned user  
 5. **Policies** → Example statements:  Allow group MyLearningGroup to manage instances in compartment MyProjectCompartment
-Allow group MyLearningGroup to read object-family in compartment MyProjectCompartment
+                                       Allow group MyLearningGroup to read object-family in compartment MyProjectCompartment
