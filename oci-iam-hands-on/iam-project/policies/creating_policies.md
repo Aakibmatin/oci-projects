@@ -38,7 +38,7 @@ IAM Policies define "who can do what" on resources (e.g., allow Dev-Admins group
      - **Target compartment**: `Development-Compartment`  
      - **Verbs**: Choose actions like `manage instance-family`, `manage volume-family`  
      - Click **Add** → Preview shows the statement  
-   - Or **Manual editor** tab: Paste statements (samples in `oci-iam-hands-on/iam-project/policies/policies_statements.md folder)  
+   - Or **Manual editor** tab: [Paste statements](oci-iam-hands-on/iam-project/policies/policies_statements.md folder)  
      Example:
 
      
