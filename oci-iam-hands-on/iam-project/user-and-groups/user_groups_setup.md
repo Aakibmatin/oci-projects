@@ -1,26 +1,78 @@
-After creating identity domain 
-Create a user and group.
+# OCI Hands-On: Creating a User and Group in an Identity Domain
 
-In oci policies are defined to either groups or compartments. (Not directly to user)
+This guide covers creating a **User** and a **Group** inside your OCI Identity Domain — essential steps for managing authentication and scalable permissions.
 
+Users represent individual people (or apps) who access OCI. Groups let you assign the same permissions to multiple users efficiently (principle of least privilege).
 
+### Why Create Users & Groups?
+- Users enable secure individual logins (email-based)
+- Groups make permission management easy & scalable
+- Groups tie directly to IAM policies for resource access
+- Perfect for isolating dev/test users from production
 
-Steps to create a user:
+### Prerequisites
+- OCI Free Tier account
+- An active **Identity Domain** (e.g., your `Development-Domain`)
+- Admin access to the domain (Identity Domain Administrator role)
 
-Step 1: Click hamburger icon and select identity and security
-Step 2: Click domains and then user management.
-Step 3: In users tab click on creat user.
-Step 4: Enter appropriate details, name, lastname, email and select group in which the user is going to recide.
-Step 5: Click on create.
+### Step-by-Step Guide
 
-After creating user, open the email and setp password of user from their.
+#### Part 1: Create a New User
 
-Hurray! You successfully created the user.
+1. **Navigate to Your Domain**  
+   - Open OCI Console → **Identity & Security** → **Domains**  
+   - Select your domain (e.g., `Development-Domain`)
 
+2. **Go to Users**  
+   - On the domain details page, under **Identity domain** (left menu) → click **Users**  
+   - Or select **User management** tab → **Users** section
 
-Steps to create a group:
+3. **Create the User**  
+   - Click **Create user** (or **Create**)  
+   - Fill in:  
+     - **First name** & **Last name** (e.g., Dev, User)  
+     - **Username/Email**: Use a real email you control (this is the login ID)  
+     - Optional: Enable MFA, add description  
+   - (You can select groups here or add later)  
+   - Click **Create**
 
-Step 1: Click hamburger icon and select identity and security
-Step 2: Click on desired domains and then user management.
-Step 3: In group tab, click crate group.
-Step 4: Enter the details and select appropriate users and create group.
+4. **Activation**  
+   - OCI sends a verification email to the user  
+   - User must click the link and set a password (or reset if needed)
+
+#### Part 2: Create a Group & Add the User
+
+1. **Go to Groups**  
+   - In the same domain → left menu → **Groups**  
+   - Or **User management** tab → **Groups** section
+
+2. **Create the Group**  
+   - Click **Create group**  
+   - **Name**: e.g., `Dev-Admins` (unique, letters/numbers/hyphens)  
+   - **Description**: e.g., `Group for development environment administrators`  
+   - Click **Create**
+
+3. **Add User to the Group** (two ways)  
+   - **Option A** (from Group):  
+     - Open the new group → **Users** or **Add user**  
+     - Search & select your user → **Add**  
+   - **Option B** (from User):  
+     - Open the user → **Groups** tab → **Add to groups**  
+     - Select your group → **Add**
+
+### Tips & Best Practices
+- Always use real emails for users (for password reset & MFA)  
+- Create groups first if you plan multiple users  
+- Enable **MFA** on users/groups for better security  
+- Groups inherit no permissions automatically — assign via IAM Policies next  
+- You can add users to multiple groups
+
+### What's Next?
+- Assign IAM Policies to this group (to allow resource management in your compartment)  
+- Test login with the new user's email  
+- Explore roles, MFA policies, or federation
+
+Detailed console screenshots, sample naming conventions, and troubleshooting notes are inside this repository!
+
+Happy OCI learning! ☁️🔐  
+#OCI #OracleCloud #IdentityDomains #Users #Groups #IAM
