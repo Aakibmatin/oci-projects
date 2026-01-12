@@ -1,8 +1,5 @@
 # Hands-On OCI IAM: Building a Secure Development Environment from Scratch
 
-![OCI Console Dashboard](https://blogs.oracle.com/wp-content/uploads/sites/83/2025/10/Dashboard-overview-1.png)
-*(Example of OCI Console Dashboard – your actual screenshots will look similar!)*
-
 This repository contains a complete step-by-step guide and resources for learning **Oracle Cloud Infrastructure (OCI) Identity and Access Management (IAM)** through practical, hands-on exercises.
 
 If you're new to OCI, the **best way to learn** is by doing — especially starting with IAM. This project helps you understand the core concepts of **authentication** (who you are) and **authorization** (what you can do) by creating a secure, isolated development environment.
