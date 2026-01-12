@@ -41,6 +41,9 @@ IAM Policies define "who can do what" on resources (e.g., allow Dev-Admins group
    - Or **Manual editor** tab: [Paste statements](oci-iam-hands-on/iam-project/policies/policies_statements.md folder)  
      Example:
 
+     Copy and paste the policy statements from this file:  
+     **`oci-iam-hands-on/iam-project/policies/policies_statements.md`**
+
      
 5. **Review & Create**  
 - Check **Policy preview** for errors  
