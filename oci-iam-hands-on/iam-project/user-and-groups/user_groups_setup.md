@@ -75,4 +75,4 @@ Users represent individual people (or apps) who access OCI. Groups let you assig
 Detailed console screenshots, sample naming conventions, and troubleshooting notes are inside this repository!
 
 Happy OCI learning! ☁️🔐  
-#OCI #OracleCloud #IdentityDomains #Users #Groups #IAM
+#OCI #OracleCloud #IdentityDomains #Users #Groups #IAM #DevOps
