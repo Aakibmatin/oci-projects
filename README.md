@@ -1,62 +1,48 @@
-# Hands-On OCI IAM: Building a Secure Development Environment from Scratch
+# Hands-On OCI Projects: Practical Learning with Oracle Cloud Infrastructure
 
-This repository contains a complete step-by-step guide and resources for learning **Oracle Cloud Infrastructure (OCI) Identity and Access Management (IAM)** through practical, hands-on exercises.
+This repository contains complete **step-by-step guides** and resources for learning **Oracle Cloud Infrastructure (OCI)** through real, hands-on projects — all using the **Always Free Tier**.
 
-If you're new to OCI, the **best way to learn** is by doing — especially starting with IAM.  
-This project helps you understand the core concepts of **authentication** (who you are) and **authorization** (what you can do) by creating a secure, isolated development environment.
+Whether you're new to cloud or preparing for OCI certifications, the best way to learn is by building!
 
-### How to Navigate This Repository (Recommended Learning Path)
+### Current Projects
 
-Follow these folders/files in order — each builds on the previous one:
+1. **IAM: Building a Secure Development Environment from Scratch**  
+   Master OCI **Identity and Access Management (IAM)** by creating a secure, isolated setup with compartments, identity domains, users, groups, and least-privilege policies.  
+   Folder: `iam-secure-dev-environment/`  
+   Start here: [README.md](./iam-secure-dev-environment/README.md)
 
-1. **Create a Compartment**  
-   → Start here: Organize and isolate your resources  
-   Folder: `compartment/`  
-   File: `README.md` (step-by-step guide + screenshots)
+2. **Load Balancing with Apache Web Servers**  
+   Build a highly available web application using OCI **Load Balancer** and **Weighted Round Robin** policy.  
+   Learn private subnets, backend sets, health checks, and public access through a load balancer.  
+   Folder: `load-balancer-apache/`  
+   Start here: [README.md](./load-balancer-apache/README.md)
 
-2. **Create an Identity Domain**  
-   → Next: Set up a dedicated space for users & groups  
-   Folder: `identity-domain/`  
-   File: `README.md`
+### Why These Projects?
 
-3. **Create User and Group**  
-   → Then: Add a real user and organize them into a group  
-   Folder: `user-group/`  
-   File: `README.md`
+- **IAM** → Security foundation every cloud engineer must master  
+- **Load Balancing** → Core networking & high-availability skills for production workloads  
+- Both are **100% doable on OCI Free Tier**  
+- Follow real-world best practices (private subnets, least privilege, traffic distribution)
 
-4. **Write & Apply IAM Policies**  
-   → Finally: Grant controlled permissions to your group  
-   Folder: `policies/`  
-   Key files:  
-   - `policies_statements.md` → All ready-to-copy policy examples  
-   - `README.md` → Step-by-step creation guide
+### Recommended Learning Path
 
-After completing these four steps, you can test the full flow:  
-Log in as your new user → Switch to the compartment → Create resources (e.g., Compute Instance) → Verify everything works securely!
+1. Start with **IAM** (security first!)  
+   → Folder: `iam-secure-dev-environment/`
 
-All folders contain detailed **README.md** files + **screenshots/** subfolders for visual walkthroughs.
+2. Then build the **Load Balancer + Web Servers** project  
+   → Folder: `load-balancer-apache/`
 
-### Why Start with IAM?
-- IAM is the foundation of security in OCI
-- Teaches **compartments**, **identity domains**, **users**, **groups**, and **policies**
-- Follows the principle of **least privilege**
-- Prevents costly security mistakes later
+Each project folder contains:
+- Detailed **README.md** with step-by-step instructions
+- **Screenshots/** subfolder for visual walkthroughs
+- Ready-to-use configuration files and policy statements (where applicable)
 
-### What You'll Build
-A mini secure setup simulating a real dev team:
-1. Isolated **Compartment** for development resources
-2. Dedicated **Identity Domain**
-3. New **User** with email-based login
-4. **Group** for managing permissions
-5. Targeted **IAM Policies** for day-to-day tasks (e.g., manage compute instances, block volumes)
-6. Test login and resource access
+### Prerequisites (for all projects)
 
-### Prerequisites
-- Free OCI account (Always Free tier is perfect!)
+- Free OCI account (Always Free tier)
 - Access to OCI Console
-- A personal email address (for user creation & verification)
+- Basic familiarity with the OCI Console (you'll learn as you go!)
 
----
+Happy building and learning! ☁️🚀
 
-→ Dive into the folders above to get hands-on!  
-Happy learning! ☁️🔐
+Feel free to open issues or PRs if you'd like to contribute more projects or improvements.
