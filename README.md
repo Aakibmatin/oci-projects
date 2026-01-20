@@ -25,7 +25,7 @@ Whether you're new to cloud or preparing for OCI certifications, the best way to
 ### Recommended Learning Path
 
 1. Start with **IAM** (security first!)  
-   → Folder: `iam-secure-dev-environment/`
+   → Folder: `oci-iam-hands-on/`
 
 2. Then build the **Load Balancer + Web Servers** project  
    → Folder: `load-balancer-apache/`
