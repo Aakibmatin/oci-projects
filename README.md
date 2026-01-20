@@ -8,15 +8,13 @@ Whether you're new to cloud or preparing for OCI certifications, the best way to
 
 1. **IAM: Building a Secure Development Environment from Scratch**  
    Master OCI **Identity and Access Management (IAM)** by creating a secure, isolated setup with compartments, identity domains, users, groups, and least-privilege policies.  
-   Folder: `iam-secure-dev-environment/`  
-   Start here: [README.md](./iam-secure-dev-environment/README.md)
+   Folder: `oci-iam-hands-on/`  
 
 2. **Load Balancing with Apache Web Servers**  
    Build a highly available web application using OCI **Load Balancer** and **Weighted Round Robin** policy.  
    Learn private subnets, backend sets, health checks, and public access through a load balancer.  
-   Folder: `load-balancer-apache/`  
-   Start here: [README.md](./load-balancer-apache/README.md)
-
+   Folder: `load-balancer-apache/`
+   
 ### Why These Projects?
 
 - **IAM** → Security foundation every cloud engineer must master  
