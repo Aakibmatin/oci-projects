@@ -68,16 +68,15 @@ This project shows how to build a **highly available web application** using **O
    - Protocol: HTTP
    - Port: 80
    - Health Check:
-Type: HTTP
-Path: /
-Port: 80
+   - Type: HTTP
+   - Path: /
+   - Port: 80
+   - Add both Compute Instances as Backends
+   - Assign weights (example: 1 for Server 1, 2 for Server 2 to demonstrate weighted distribution)
 
-Add both Compute Instances as Backends
-Assign weights (example: 1 for Server 1, 2 for Server 2 to demonstrate weighted distribution)
-
-Test Your Load Balancer
-Copy the Public IP address of the Load Balancer (found on the Load Balancer details page)
-Open your browser and visit:
-http://<load-balancer-public-ip>
-Refresh the page multiple times — you should see responses alternating between Server 1 and Server 2
-With different weights (e.g., 1 vs 2), you’ll notice one server appears more frequently
+ 5.**Test Your Load Balancer**
+   - Copy the Public IP address of the Load Balancer (found on the Load Balancer details page)
+   - Open your browser and visit:
+   - http://<load-balancer-public-ip>
+   - Refresh the page multiple times — you should see responses alternating between Server 1 and Server 2
+   - With different weights (e.g., 1 vs 2), you’ll notice one server appears more frequently
