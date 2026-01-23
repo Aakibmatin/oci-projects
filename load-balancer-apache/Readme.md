@@ -44,10 +44,10 @@ This project shows how to build a **highly available web application** using **O
 
    (Recommended) Customize the default page to identify each server:Bash
 
-    On Server 1
+   - On Server 1
       echo "<h1>Server 1 - Instance A</h1>" | sudo tee /var/www/html/index.html
 
-    On Server 2
+   - On Server 2
       echo "<h1>Server 2 - Instance B</h1>" | sudo tee /var/www/html/index.html
 
 
