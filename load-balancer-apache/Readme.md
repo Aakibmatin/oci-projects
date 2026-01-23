@@ -46,14 +46,14 @@ This project shows how to build a **highly available web application** using **O
 
 
 3. **Create the Load Balancer**
-  -  Navigate to Networking → Load Balancers in the OCI Console
-  -  Click Create Load Balancer
-  -  Choose Flexible Load Balancer (public)
-  -  Select your VCN and the public subnet
-  -  Choose Weighted Round Robin as the load balancing policy
-  -  dd a Listener:
-  -  Protocol: HTTP
-  -  Port: 80
+   - Navigate to Networking → Load Balancers in the OCI Console
+   - Click Create Load Balancer
+   - Choose Flexible Load Balancer (public)
+   - Select your VCN and the public subnet
+   - Choose Weighted Round Robin as the load balancing policy
+   - dd a Listener:
+   - Protocol: HTTP
+   - Port: 80
 
 
 4. **Configure Backend Set**
@@ -68,10 +68,9 @@ This project shows how to build a **highly available web application** using **O
    - Add both Compute Instances as Backends
    - Assign weights (example: 1 for Server 1, 2 for Server 2 to demonstrate weighted distribution)
 
- 5.**Test Your Load Balancer**
+5. **Test Your Load Balancer**
    - Copy the Public IP address of the Load Balancer (found on the Load Balancer details page)
-   - Open your browser and visit:
-   - http://<load-balancer-public-ip>
+   - Open your browser and visit: load balancer's public ip
    - Refresh the page multiple times — you should see responses alternating between Server 1 and Server 2
    - With different weights (e.g., 1 vs 2), you’ll notice one server appears more frequently
 
