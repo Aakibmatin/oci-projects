@@ -77,7 +77,7 @@ This project shows how to build a **highly available web application** using **O
 
 
 
-**Key Takeaways**
+###Key Takeaways
 
    - Private subnets keep your application servers secure and inaccessible from the public internet
    - OCI Load Balancers provide high availability and intelligent traffic distribution
@@ -85,7 +85,7 @@ This project shows how to build a **highly available web application** using **O
    - Health checks automatically detect and remove unhealthy instances
    - All of this is completely free on the OCI Always Free Tier!
 
-**Next Steps / Challenges**
+###Next Steps / Challenges
 
    - Enable HTTPS using OCI Certificates or Let's Encrypt
    - Experiment with other policies: Round Robin, Least Connections
