@@ -65,9 +65,9 @@ This project shows how to build a **highly available web application** using **O
 4. **Configure Backend Set**
    - Create a new Backend Set
    - Name it (e.g., apache-backend-set)
--Protocol: HTTP
-Port: 80
-Health Check:
+   - Protocol: HTTP
+   - Port: 80
+   - Health Check:
 Type: HTTP
 Path: /
 Port: 80
