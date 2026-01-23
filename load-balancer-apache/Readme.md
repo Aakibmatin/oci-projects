@@ -42,13 +42,7 @@ This project shows how to build a **highly available web application** using **O
    - Use the same **SSH key** for both instances
    - Install and start **Apache** on each instance:
 
-   (Recommended) Customize the default page to identify each server:Bash
-
-   - On Server 1
-      - echo "<h1>Server 1 - Instance A</h1>" | sudo tee /var/www/html/index.html
-
-   - On Server 2
-      - echo "<h1>Server 2 - Instance B</h1>" | sudo tee /var/www/html/index.html
+   (Recommended) Customize the default page to identify each server
 
 
 3. **Create the Load Balancer**
@@ -80,3 +74,23 @@ This project shows how to build a **highly available web application** using **O
    - http://<load-balancer-public-ip>
    - Refresh the page multiple times — you should see responses alternating between Server 1 and Server 2
    - With different weights (e.g., 1 vs 2), you’ll notice one server appears more frequently
+
+
+
+**Key Takeaways**
+
+   - Private subnets keep your application servers secure and inaccessible from the public internet
+   - OCI Load Balancers provide high availability and intelligent traffic distribution
+   - Weighted Round Robin is perfect when backends have different capacities
+   - Health checks automatically detect and remove unhealthy instances
+   - All of this is completely free on the OCI Always Free Tier!
+
+**Next Steps / Challenges**
+
+   - Enable HTTPS using OCI Certificates or Let's Encrypt
+   - Experiment with other policies: Round Robin, Least Connections
+   - Add more instances and test failover
+   - Implement Session Persistence (sticky sessions)
+   - Automate the entire setup with Terraform or OCI CLI
+
+**Happy learning and building! ☁️⚖️**
