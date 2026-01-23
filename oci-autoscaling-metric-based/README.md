@@ -37,9 +37,6 @@ Follow these in order:
 - Always test scale-in to avoid overusing resources.
 - Free Tier is generous – but watch limits like instance counts and bandwidth.
 
-## Scripts
-- `scripts/install-stress-ng.sh`: A simple bash script to install and run stress-ng on your instance.
-
 ## Related
 - Inspired by my LinkedIn post: [Link to your post here].
 - Questions? Open an issue or PR!
