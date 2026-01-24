@@ -10,7 +10,7 @@ Time to create your base VM! We'll use Oracle Linux, customize it (e.g., install
    - Name: "base-instance".
    - Image: Oracle Linux (latest).
    - Shape: VM.Standard.E2.1.Micro (Free Tier eligible).
-   - VCN/Subnets: Your public subnet.
+   - VCN/Subnets: Your private subnet.
    - SSH: Upload your public key.
    - Boot Volume: Default.
 2. Once running, SSH in: `ssh opc@<public-ip>`.
@@ -20,7 +20,7 @@ Time to create your base VM! We'll use Oracle Linux, customize it (e.g., install
 
 ## Tips & Gotchas
 - Free Tier: Micro shape is always free (up to 2 instances).
-- Install stress-ng here if testing locally: See `../../scripts/install-stress-ng.sh`.
+- Install stress-ng here if testing locally.
 - Wait for image creation (10-15 mins).
 
 On to [Step 4: Instance Pool](../steps/04-instance-pool.md).
