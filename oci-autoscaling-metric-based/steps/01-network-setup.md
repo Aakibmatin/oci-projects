@@ -18,6 +18,12 @@ Hey! First things first – we need a network foundation. In OCI, this means cre
    - CIDR: 10.0.0.0/24 (or subset of VCN CIDR).
    - Route Table: Default (should have internet gateway – if not, add one).
    - Security List: Default (open ports as needed, e.g., 22 for SSH, 80/443 for HTTP).
+4. In the VCN details, go to Subnets > Create Subnet.
+   - Name: "private-subnet".
+   - Type: Private.
+   - CIDR: 10.0.1.0/24 (or subset of VCN CIDR).
+   - Route Table: Default (should have internet gateway – if not, add one).
+   - Security List: Default (open ports as needed, e.g., 22 for SSH, 80/443 for HTTP).
 
 ## Tips & Gotchas
 - Ensure the subnet has enough IP space for scaling (e.g., /24 gives ~250 IPs).
