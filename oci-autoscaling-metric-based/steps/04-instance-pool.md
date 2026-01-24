@@ -9,7 +9,7 @@ Using your custom image, create an instance configuration and then the pool – 
 1. Compute > Instance Configurations > Create Instance Configuration.
    - From your custom image.
    - Shape: Same as base (Micro).
-   - Networking: Your VCN/public subnet.
+   - Networking: Your VCN.
 2. Compute > Instance Pools > Create Instance Pool.
    - Name: "autoscaling-pool".
    - Use your instance config.
